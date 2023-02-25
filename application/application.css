@@ -1,0 +1,12 @@
+
+.root {
+	 -fx-background-color:rgb(192,192,192);
+}
+
+#myPain {
+	-fx-background-color:#FFFFFF;
+}
+
+table {
+overflow : hidden;
+}

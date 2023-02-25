@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.G4Controller">
+   <children>
+      <AnchorPane fx:id="myPain" layoutX="260.0" layoutY="29.0" prefHeight="64.0" prefWidth="280.0">
+         <children>
+            <Label fx:id="TitleLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="14.0" prefHeight="27.0" prefWidth="280.0" text="月別一覧画面">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button alignment="CENTER" layoutX="36.0" layoutY="23.0" mnemonicParsing="false" onAction="#ChangeMenyusentakuG" prefHeight="35.0" prefWidth="44.0" text="◀" textFill="#f8b305">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="G4KirokuTable" editable="true" fixedCellSize="22.0" layoutX="151.0" layoutY="146.0" prefHeight="203.0" prefWidth="526.0">
+        <columns>
+          <TableColumn fx:id="G4hidukeColumn" prefWidth="38.666656494140625" resizable="false" sortable="false" style="-fx-alignment: CENTER;" text="日付" />
+          <TableColumn fx:id="G4youbiColumn" editable="false" prefWidth="40.666656494140625" resizable="false" sortable="false" style="-fx-alignment: CENTER;" text="曜日" />
+          <TableColumn fx:id="G4kamokusyubetuColumn" editable="false" prefWidth="172.66664123535156" resizable="false" sortable="false" text="科目種別" />
+          <TableColumn fx:id="G4jikanColumn" editable="false" prefWidth="66.666748046875" resizable="false" sortable="false" style="-fx-alignment: CENTER;" text="達成度平均" />
+          <TableColumn fx:id="G4tasseidoColumn" editable="false" prefWidth="52.666656494140625" resizable="false" sortable="false" style="-fx-alignment: CENTER;" text="総合時間" />
+          <TableColumn fx:id="G4bikouColumn" editable="false" prefWidth="152.0" resizable="false" sortable="false" text="備考" />
+        </columns>
+      </TableView>
+      <Button fx:id="sengetu" layoutX="36.0" layoutY="81.0" mnemonicParsing="false" onAction="#goSengetuAction" prefHeight="49.0" prefWidth="74.0" style="-fx-padding: 0 0; -fx-background-color: WHITE;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="raigetu" layoutX="662.0" layoutY="83.0" mnemonicParsing="false" onAction="#goRaigetuAction" prefHeight="49.0" prefWidth="74.0" style="-fx-padding: 0 0; -fx-background-color: WHITE;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <SplitMenuButton fx:id="kamokumenu" alignment="CENTER" layoutX="19.0" layoutY="146.0" mnemonicParsing="false" onAction="#kamokusentaku" prefHeight="29.0" prefWidth="125.0" text="科目">
+      </SplitMenuButton>
+      <Label fx:id="kamokuLabel" accessibleRole="TEXT" alignment="CENTER" layoutX="20.0" layoutY="175.0" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: WHITE; -fx-border-radius: 15;" />
+      <Button layoutX="20.0" layoutY="218.0" mnemonicParsing="false" mouseTransparent="true" pickOnBounds="false" prefHeight="29.0" prefWidth="120.0" text="総合時間" />
+      <Button layoutX="20.0" layoutY="289.0" mnemonicParsing="false" mouseTransparent="true" pickOnBounds="false" prefHeight="29.0" prefWidth="120.0" text="達成度（平均）" />
+      <Label fx:id="sougoujikanLabel" alignment="CENTER" layoutX="20.0" layoutY="248.0" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: WHITE; -fx-border-radius: 15;" />
+      <Label fx:id="tasseidoLabel" alignment="CENTER" layoutX="20.0" layoutY="318.0" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: WHITE; -fx-border-radius: 15;" />
+      <Button fx:id="tougetu" alignment="CENTER" layoutX="363.0" layoutY="95.0" mnemonicParsing="false" mouseTransparent="true" pickOnBounds="false" prefHeight="49.0" prefWidth="74.0" style="-fx-padding: 0 0; -fx-background-color: WHITE;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
