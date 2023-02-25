@@ -19,7 +19,6 @@ public class G2Controller {
 	
 	public void ChangeKirokuG(ActionEvent event) throws IOException {
 		  G3Controller.settoday(LocalDate.now());
-		  System.out.println("login!");
 		  root = FXMLLoader.load(getClass().getResource("/GamenFxml/Gamen3.fxml"));
 		  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		  scene = new Scene(root);
@@ -31,7 +30,6 @@ public class G2Controller {
 	public void ChangeTukibetuitiranG(ActionEvent event) throws IOException {
 		  G4Controller.setsyokaihGhyoujiFLG(1);
 		  G4Controller.settoday(LocalDate.now());
-		  System.out.println("login!");
 		  root = FXMLLoader.load(getClass().getResource("/GamenFxml/Gamen4.fxml"));
 		  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		  scene = new Scene(root);
@@ -42,7 +40,6 @@ public class G2Controller {
 	}
 	public void ChangePasshenkouG(ActionEvent event) throws IOException {
 
-		  System.out.println("login!");
 		  root = FXMLLoader.load(getClass().getResource("/GamenFxml/Gamen7.fxml"));
 		  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		  scene = new Scene(root);
@@ -54,7 +51,6 @@ public class G2Controller {
 	
 	public void ChangeLoginG(ActionEvent event) throws IOException {
 
-		  System.out.println("login!");
 		  root = FXMLLoader.load(getClass().getResource("/GamenFxml/Gamen1.fxml"));
 		  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		  scene = new Scene(root);

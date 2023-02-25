@@ -33,7 +33,6 @@ public class G7Controller {
 	
 	public void ChangeMenyusentakuG(ActionEvent event) throws IOException {
 
-		  System.out.println("login!");
 		  root = FXMLLoader.load(getClass().getResource("/GamenFxml/Gamen2.fxml"));
 		  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		  scene = new Scene(root);
@@ -53,8 +52,6 @@ public class G7Controller {
 		String checkResult = kinko.passwdHenkouCheck(Loldpasswd, Lnewpasswd, Ltwnewpasswd);
 		if (checkResult.equals("OK")) {
 			String updateResult = kinko.passwdHenkou(Lnewpasswd);
-			if (updateResult.equals("success")) System.out.println("successが返ってきた");
-			else System.out.println("success以外が返ってきた");
 		}
 		else {
 			msgLabel.setText(checkResult);

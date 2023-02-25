@@ -57,7 +57,6 @@ public class G3Controller{
 	
 	public void ChangeMenyusentakuG(ActionEvent event) throws IOException {
 
-		  System.out.println("login!");
 		  root = FXMLLoader.load(getClass().getResource("/GamenFxml/Gamen2.fxml"));
 		  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		  scene = new Scene(root);
@@ -68,7 +67,6 @@ public class G3Controller{
 	}
 	public void ChangeKamokuSTG(ActionEvent event) throws IOException {
 
-		  System.out.println("login!");
 		  root = FXMLLoader.load(getClass().getResource("/GamenFxml/Gamen5.fxml"));
 		  stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		  scene = new Scene(root);
@@ -80,14 +78,12 @@ public class G3Controller{
 	
     @FXML
     void goTomorrowAction(ActionEvent event) {
-    	System.out.println("goTomorrowAction");
     	today = today.plusDays(1);
     	initialize(today);
     }
 
     @FXML
     void goYesterdayAction(ActionEvent event) {
-    	System.out.println("goYesterdayAction");
     	today = today.plusDays(-1);
     	initialize(today);
     }

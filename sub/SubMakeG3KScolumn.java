@@ -18,7 +18,6 @@ public class SubMakeG3KScolumn {
 			if (!(strHIDARI[i].equals(""))) G3ColumnList.add(strHIDARI[i]);
 			if (!(strMIGI[i].equals(""))) G3ColumnList.add(strMIGI[i]);
 			count = G3ColumnList.size();
-			System.out.println(count);
 		}
 		
 		switch(count) {
@@ -82,7 +81,6 @@ public class SubMakeG3KScolumn {
    			g3kamokusyubetuColumn.setCellFactory(ComboBoxTableCell.forTableColumn(str71, str72, str73, str74, str75, str76, str77));
     		break;
     	default :
-    		System.out.println("デフォルト");
     		break;
 		
 		
