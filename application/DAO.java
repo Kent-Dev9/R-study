@@ -19,7 +19,7 @@ public class DAO {
     private static final String RDB_DRIVE = "org.postgresql.Driver";
     private static final String URL = "jdbc:postgresql://localhost:5432/rstudy";
     private static final String USER = "postgres";
-    private static final String PASSWD = "1203kent";
+    private static final String PASSWD = "kent";
     
     // データベース接続を行うメソッド
     // データベース接続用定義を基にデータベースへ接続し、戻り値としてコネクション情報を返す
@@ -632,7 +632,6 @@ public class DAO {
             pstmt.setDate(1, tukiStart);
             pstmt.setDate(2, tukiEnd);
             ResultSet rs = pstmt.executeQuery();
-            rs.next();
 //            
                 while(rs.next()) {
                     for (int i = 0; i < TukiLength; i++) {
